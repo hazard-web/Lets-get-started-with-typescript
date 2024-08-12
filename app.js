@@ -1,5 +1,5 @@
-function add(num1, num2) {
-    return num1 + num2;
-}
-console.log(add(1, 6));
-console.log(add('1', '6'));
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = require("express");
+var app = (0, express_1.default)();
+app.listen(4000);

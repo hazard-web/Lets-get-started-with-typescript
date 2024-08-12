@@ -1,7 +1,11 @@
-function add(num1:number, num2:number){
-    return num1 + num2;
-}
+import express from 'express';
+import todoRoutes from './routes/todo';
+import bodyParser from 'body-parser';
 
-console.log(add(1,6));
+const app = express();
 
-console.log(add('1','6'));
+app.use(todoRoutes);
+app.use(bodyParser.json());
+
+// Start the server on port 4000
+app.listen(4000);
